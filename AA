@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Opening Telegram...</title>
+</head>
+<body>
+  <script>
+    var appLink = "tg://resolve?domain=FixitObot";
+    var webLink = "https://t.me/FixitObot";
+
+    // Try to open the app
+    window.location.href = appLink;
+
+    // If the app doesn't open within ~1.5s, fall back to the web link
+    setTimeout(function() {
+      window.location.href = webLink;
+    }, 1500);
+  </script>
+  <p>If nothing happens, <a href="https://t.me/FixitObot">tap here</a>.</p>
+</body>
+</html>
